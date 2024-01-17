@@ -19,6 +19,6 @@ export interface StepOffset {
  * @param value The value to be checked
  * @returns True if the given value implements [[StepOffset]] and false otherwise
  */
-export function isStepOffset(value: any): value is StepOffset {
-  return value.hasOwnProperty('stepOffset');
+export function isStepOffset(value: {stepOffset: number}): value is StepOffset {
+  return Object.prototype.hasOwnProperty.call(value, 'stepOffset');
 }

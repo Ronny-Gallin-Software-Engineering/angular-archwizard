@@ -453,13 +453,13 @@ describe('WizardNavigationBarComponent', () => {
     expect(goToThirdStepLinkEl.classes['navigable']).toBeFalsy('Third step label is clickable');
   });
 
-  it('should use the \"small\" layout when no navigation bar layout is specified', () => {
+  it('should use the "small" layout when no navigation bar layout is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     checkClasses(navBarEl.classes, ['horizontal', 'small']);
   });
 
-  it('should use the \"small\" layout when it is specified', () => {
+  it('should use the "small" layout when it is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     wizardTest.wizard.navBarLayout = 'small';
@@ -468,7 +468,7 @@ describe('WizardNavigationBarComponent', () => {
     checkClasses(navBarEl.classes, ['horizontal', 'small']);
   });
 
-  it('should use the \"large-filled\" layout when it is specified', () => {
+  it('should use the "large-filled" layout when it is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     wizardTest.wizard.navBarLayout = 'large-filled';
@@ -477,7 +477,7 @@ describe('WizardNavigationBarComponent', () => {
     checkClasses(navBarEl.classes, ['horizontal', 'large-filled']);
   });
 
-  it('should use the \"large-empty\" layout when it is specified', () => {
+  it('should use the "large-empty" layout when it is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     wizardTest.wizard.navBarLayout = 'large-empty';
@@ -486,7 +486,7 @@ describe('WizardNavigationBarComponent', () => {
     checkClasses(navBarEl.classes, ['horizontal', 'large-empty']);
   });
 
-  it('should use the \"large-filled-symbols\" layout when it is specified', () => {
+  it('should use the "large-filled-symbols" layout when it is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     wizardTest.wizard.navBarLayout = 'large-filled-symbols';
@@ -495,7 +495,7 @@ describe('WizardNavigationBarComponent', () => {
     checkClasses(navBarEl.classes, ['horizontal', 'large-filled-symbols']);
   });
 
-  it('should use the \"large-empty-symbols\" layout when it is specified', () => {
+  it('should use the "large-empty-symbols" layout when it is specified', () => {
     const navBarEl = wizardTestFixture.debugElement.query(By.css('aw-wizard-navigation-bar'));
 
     wizardTest.wizard.navBarLayout = 'large-empty-symbols';

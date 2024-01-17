@@ -1,4 +1,4 @@
-import {Directive, Input, OnChanges, SimpleChanges} from '@angular/core';
+import {Directive, Input, OnChanges} from '@angular/core';
 
 import {NavigationMode} from '../navigation/navigation-mode.interface';
 import {ConfigurableNavigationMode} from '../navigation/configurable-navigation-mode';
@@ -84,7 +84,7 @@ export class NavigationModeDirective implements OnChanges {
 
   constructor(private wizard: WizardComponent) { }
 
-  public ngOnChanges(changes: SimpleChanges): void {
+  public ngOnChanges(): void {
     this.wizard.navigation = this.getNavigationMode();
   }
 

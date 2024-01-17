@@ -25,9 +25,9 @@ import { WizardStep } from './wizard-step.interface';
   `
 })
 class WizardTestComponent {
-  public canEnter: any = true;
+  public canEnter: boolean = true;
 
-  public canExit: any = true;
+  public canExit: boolean = true;
 
   @ViewChild(WizardComponent)
   public wizard: WizardComponent;
@@ -143,21 +143,21 @@ describe('WizardStep', () => {
     wizardTestFixture.detectChanges();
 
     wizardTest.secondStep.canEnterStep(MovingDirection.Backwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`Input value 'malformed input' is neither a boolean nor a function`)));
     wizardTest.secondStep.canEnterStep(MovingDirection.Forwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`Input value 'malformed input' is neither a boolean nor a function`)));
 
-    wizardTest.canEnter = (direction) => Promise.reject(new Error('malformed input'));
+    wizardTest.canEnter = () => Promise.reject(new Error('malformed input'));
     tick();
     wizardTestFixture.detectChanges();
 
     wizardTest.secondStep.canEnterStep(MovingDirection.Backwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`malformed input`)));
     wizardTest.secondStep.canEnterStep(MovingDirection.Forwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`malformed input`)));
   }));
 
@@ -218,21 +218,21 @@ describe('WizardStep', () => {
     wizardTestFixture.detectChanges();
 
     wizardTest.secondStep.canExitStep(MovingDirection.Backwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`Input value 'malformed input' is neither a boolean nor a function`)));
     wizardTest.secondStep.canExitStep(MovingDirection.Forwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`Input value 'malformed input' is neither a boolean nor a function`)));
 
-    wizardTest.canExit = (direction) => Promise.reject(new Error('malformed input'));
+    wizardTest.canExit = () => Promise.reject(new Error('malformed input'));
     tick();
     wizardTestFixture.detectChanges();
 
     wizardTest.secondStep.canExitStep(MovingDirection.Backwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`malformed input`)));
     wizardTest.secondStep.canExitStep(MovingDirection.Forwards)
-      .then(result => fail())
+      .then(() => fail())
       .catch(error => expect(error).toEqual(new Error(`malformed input`)));
   }));
 

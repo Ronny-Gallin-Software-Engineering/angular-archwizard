@@ -27,7 +27,7 @@ class WizardTestComponent {
   @ViewChild(WizardComponent)
   public wizard: WizardComponent;
 
-  public isValid: any = true;
+  public isValid: boolean = true;
 
   public eventLog: Array<string> = [];
 
@@ -44,7 +44,6 @@ describe('WizardCompletionStepComponent', () => {
   let wizardTestFixture: ComponentFixture<WizardTestComponent>;
 
   let wizardTest: WizardTestComponent;
-  let wizard: WizardComponent;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
@@ -58,7 +57,6 @@ describe('WizardCompletionStepComponent', () => {
     wizardTestFixture.detectChanges();
 
     wizardTest = wizardTestFixture.componentInstance;
-    wizard = wizardTest.wizard;
 
     // wait a tick to ensure that the initialization has been completed
     tick();

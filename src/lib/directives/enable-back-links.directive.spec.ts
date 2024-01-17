@@ -28,7 +28,7 @@ class WizardTestComponent {
   @ViewChild(WizardComponent)
   public wizard: WizardComponent;
 
-  public isValid: any = true;
+  public isValid: boolean = true;
 
   public eventLog: Array<string> = [];
 

@@ -18,6 +18,6 @@ export interface StepId {
  * @param value The value to be checked
  * @returns True if the given value implements [[StepId]] and false otherwise
  */
-export function isStepId(value: any): value is StepId {
-  return value.hasOwnProperty('stepId') && !(value instanceof WizardStep);
+export function isStepId(value: { stepId: string }): value is StepId {
+  return Object.prototype.hasOwnProperty.call(value, 'stepId') && !(value instanceof WizardStep);
 }

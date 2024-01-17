@@ -1,4 +1,4 @@
-import { Component, Directive, Inject, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { WizardCompletionStep } from '../util/wizard-completion-step.interface';
 import { WizardStep } from '../util/wizard-step.interface';
 import { WizardBase } from '../util/wizard.interface';

@@ -58,9 +58,6 @@ class WizardTestComponent {
 describe('GoToStepDirective', () => {
   let wizardTestFixture: ComponentFixture<WizardTestComponent>;
 
-  let wizardTest: WizardTestComponent;
-  let wizard: WizardComponent;
-
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [WizardTestComponent],
@@ -71,9 +68,6 @@ describe('GoToStepDirective', () => {
   beforeEach(fakeAsync(() => {
     wizardTestFixture = TestBed.createComponent(WizardTestComponent);
     wizardTestFixture.detectChanges();
-
-    wizardTest = wizardTestFixture.componentInstance;
-    wizard = wizardTest.wizard;
 
     // wait a tick to ensure that the initialization has been completed
     tick();

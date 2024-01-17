@@ -25,14 +25,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.lib.json",
-              "tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         }
@@ -60,8 +57,7 @@
             "main": "src/app/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-            ],
+            "assets": [],
             "styles": [
               "dist/angular-archwizard/styles/archwizard.scss"
             ],
@@ -81,8 +77,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "fileReplacements": [
-              ],
+              "fileReplacements": [],
               "outputHashing": "all"
             },
             "development": {

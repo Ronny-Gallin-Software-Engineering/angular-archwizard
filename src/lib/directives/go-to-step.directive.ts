@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, HostListener, Inject, InjectionToken, Input, Optional, Output } from '@angular/core';
+import { Directive, EventEmitter, HostListener, Input, Optional, Output } from '@angular/core';
 import { isStepId, StepId } from '../util/step-id.interface';
 import { isStepIndex, StepIndex } from '../util/step-index.interface';
 import { isStepOffset, StepOffset } from '../util/step-offset.interface';

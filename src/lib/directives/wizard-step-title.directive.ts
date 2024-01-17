@@ -24,6 +24,7 @@ export class WizardStepTitleDirective {
    *
    * @param templateRef A reference to the content of the `ng-template` that contains this [[WizardStepTitleDirective]]
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(public templateRef: TemplateRef<any>) {
   }
 }

@@ -54,6 +54,7 @@ export class CompletedStepDirective implements OnInit {
    */
   public ngOnInit(): void {
     // The input receives '' when specified in the template without a value.  In this case, apply the default value (`true`).
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.wizardStep.initiallyCompleted = this.initiallyCompleted || this.initiallyCompleted as any === '';
   }
 }

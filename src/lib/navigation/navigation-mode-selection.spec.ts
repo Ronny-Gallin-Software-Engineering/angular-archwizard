@@ -5,6 +5,7 @@ import { WizardComponent } from '../components/wizard.component';
 import { BaseNavigationMode } from './base-navigation-mode.interface';
 
 class CustomNavigationMode extends BaseNavigationMode {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public isNavigable(wizard: WizardComponent, destinationIndex: number): boolean {
     return true;
   }
