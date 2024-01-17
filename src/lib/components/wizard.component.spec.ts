@@ -118,7 +118,7 @@ describe('WizardComponent', () => {
     expect(wizardTestFixture.debugElement.query(By.css('aw-wizard > :first-child')).name).toBe('aw-wizard-navigation-bar');
     expect(wizardTestFixture.debugElement.query(By.css('aw-wizard > :last-child')).name).toBe('div');
 
-    checkClasses(navBarEl.classes, ['vertical', 'small']);
+    checkClasses(navBarEl.classes, ['small','vertical']);
     checkClasses(wizardEl.classes, ['vertical']);
     checkClasses(wizardStepsDiv.classes, ['wizard-steps', 'vertical']);
   });
