@@ -99,10 +99,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "archwizard-test:build:production"
+              "buildTarget": "archwizard-test:build:production"
             },
             "development": {
-              "browserTarget": "archwizard-test:build:development"
+              "buildTarget": "archwizard-test:build:development"
             }
           },
           "defaultConfiguration": "development"
