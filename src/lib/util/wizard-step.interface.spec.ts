@@ -25,8 +25,9 @@ import { WizardStep } from './wizard-step.interface';
   `
 })
 class WizardTestComponent {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public canEnter: any = true;
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   public canExit: any = true;
 
   @ViewChild(WizardComponent)
