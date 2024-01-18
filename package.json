@@ -1,5 +1,5 @@
 {
-  "name": "@rgse/angular-archwizard",
+  "name": "@rg-software/angular-archwizard",
   "version": "17.0.0",
   "license": "MIT",
   "description": "A fork of the Angular Arch Wizard adapted for angular versions 17+.",
