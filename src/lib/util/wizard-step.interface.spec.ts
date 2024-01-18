@@ -25,9 +25,9 @@ import { WizardStep } from './wizard-step.interface';
   `
 })
 class WizardTestComponent {
-  public canEnter: boolean = true;
+  public canEnter: any = true;
 
-  public canExit: boolean = true;
+  public canExit: any = true;
 
   @ViewChild(WizardComponent)
   public wizard: WizardComponent;

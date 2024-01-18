@@ -1,12 +1,6 @@
 # Overview angular-archwizard
-[![Build Status](https://github.com/madoar/angular-archwizard/actions/workflows/build.yml/badge.svg?branch=develop)](https://github.com/madoar/angular-archwizard/actions)
-[![Dependency Status](https://david-dm.org/madoar/angular-archwizard.svg)](https://david-dm.org/madoar/angular-archwizard)
-[![Dev-Dependency Status](https://david-dm.org/madoar/angular-archwizard/dev-status.svg)](https://david-dm.org/madoar/angular-archwizard?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/039c5be36d8646dfb73972e8679e5021)](https://www.codacy.com/app/marc.arndt/angular-archwizard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=madoar/angular-archwizard&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/039c5be36d8646dfb73972e8679e5021)](https://www.codacy.com/app/marc.arndt/angular-archwizard?utm_source=github.com&utm_medium=referral&utm_content=madoar/angular-archwizard&utm_campaign=Badge_Coverage)
-[![NPM Version](https://img.shields.io/npm/v/angular-archwizard.svg)](https://www.npmjs.com/package/angular-archwizard)
 
-This project contains a functional module with a wizard component and some supportive components and directives for [Angular](https://angular.io/) version 9 or later.
+This project contains a functional module with a wizard component and some supportive components and directives for [Angular](https://angular.io/) version 17 or later.
 
 ## Build
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
@@ -15,37 +9,34 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Compatibility
-Latest `angular-archwizard` is compatible with Angular 9+.
-Older versions of `angular-archwizard` can be used together with older versions of Angular.
-The following table shows which version of `angular-archwizard` has been built with which Angular version:
+Latest `@rgse/angular-archwizard` is compatible with Angular 17+.
+Older versions of `@rgse/angular-archwizard` can be used together with older versions of Angular.
+The following table shows which version of `@rgse/angular-archwizard` has been built with which Angular version:
 
-| `angular-archwizard` version | Angular version |
-|------------------------------|-----------------|
-| `3.0.0`                      | Angular 5       |
-| `4.0.0`                      | Angular 7       |
-| `5.0.1`                      | Angular 8       |
-| `6.1.0`                      | Angular 9       |
-| `7.0.0`                      | Angular 11      |
-
-## Gitpod
-`angular-archwizard` can be developed with Gitpod, a free one-click online IDE for GitHub:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/madoar/angular-archwizard)
+| `@rgse/angular-archwizard` version | Angular version | Vendor                                                                                   |
+|------------------------------|-----------------|------------------------------------------------------------------------------------------|
+| `3.0.0`                      | Angular 5       | [angular-archwizard](https://www.npmjs.com/package/angular-archwizard)                   |
+| `4.0.0`                      | Angular 7       | [angular-archwizard](https://www.npmjs.com/package/angular-archwizard)                   |
+| `5.0.1`                      | Angular 8       | [angular-archwizard](https://www.npmjs.com/package/angular-archwizard)                   |
+| `6.1.0`                      | Angular 9       | [angular-archwizard](https://www.npmjs.com/package/angular-archwizard)                   |
+| `7.0.0`                      | Angular 11      | [angular-archwizard](https://www.npmjs.com/package/angular-archwizard)                   |
+| `14.0.x`                     | Angular 14      | [@achimha/angular-archwizard](https://www.npmjs.com/package/@achimha/angular-archwizard) |
+| `17.0.x`                     | Angular 17      | [@rgse/angular-archwizard](https://www.npmjs.com/package/@rgse/angular-archwizard)       |
 
 ## Installation
 
-### Step 1: Install `angular-archwizard`
-`angular-archwizard` is available as a NPM package. To install `angular-archwizard` in your project directory run:
+### Step 1: Install `@rgse/angular-archwizard`
+`@rgse/angular-archwizard` is available as a NPM package. To install `@rgse/angular-archwizard` in your project directory run:
 
 ```bash
-$ npm install --save angular-archwizard
+$ npm install --save @rgse/angular-archwizard
 ```
 
 ### Step 2: Import the ArchwizardModule
-After installation you can import `angular-archwizard` into your Angular project by adding the `ArchwizardModule` to your module declaration as follows:
+After installation you can import `@rgse/angular-archwizard` into your Angular project by adding the `ArchwizardModule` to your module declaration as follows:
 
 ```typescript
-import { ArchwizardModule } from 'angular-archwizard';
+import { ArchwizardModule } from '@rgse/angular-archwizard';
 
 @NgModule({
   imports: [
@@ -56,10 +47,10 @@ export class Module { }
 ```
 
 ### Step 3: Include styles
-To allow customization, `angular-archwizard` bundles CSS styles separately. If you are using Angular CLI, import them into your `styles.css`...
+To allow customization, `@rgse/angular-archwizard` bundles CSS styles separately. If you are using Angular CLI, import them into your `styles.css`...
 
 ```css
-@import '../node_modules/angular-archwizard/styles/archwizard.css';
+@import '../node_modules/@rgse/angular-archwizard/styles/archwizard.css';
 ```
 
 ...or include them into `angular.json`:
@@ -68,14 +59,14 @@ To allow customization, `angular-archwizard` bundles CSS styles separately. If y
 {
   // ...
   "styles": [
-    "node_modules/angular-archwizard/styles/archwizard.css",
+    "node_modules/@rgse/angular-archwizard/styles/archwizard.css",
     "src/styles.css"
   ]
   // ...
 }
 ```
 
-If you are using SCSS, you can include the styles in the form of a `.scss` file: `node_modules/angular-archwizard/styles/archwizard.scss`.
+If you are using SCSS, you can include the styles in the form of a `.scss` file: `node_modules/@rgse/angular-archwizard/styles/archwizard.scss`.
 This way you can easily customize wizard's appearance by tweaking SCSS variables as described in [Styles Customization](#styles-customization).
 
 ## How to use the wizard
@@ -105,7 +96,7 @@ To use this wizard component in an angular project simply add a `aw-wizard` comp
 
 ### \<aw-wizard\>
 The `<aw-wizard>` environment is the environment in which you define the steps belonging to your wizard.
-In addition to the contained wizard steps, `angular-archwizard` enables you to define the location and the layout of the navigation bar inside your wizard.
+In addition to the contained wizard steps, `@rgse/angular-archwizard` enables you to define the location and the layout of the navigation bar inside your wizard.
 To set the location, the layout of the navigation bar and many other settings, you can pass the following parameters to the `aw-wizard` component:
 
 #### \[navBarLocation\]
@@ -155,7 +146,7 @@ Possible `<aw-wizard>` parameters:
 | `[disableNavigationBar]` | `boolean`                                                                                               | `false`           |
 
 ### \<aw-wizard-step\>
-`angular-archwizard` contains two ways to define a wizard step.
+`@rgse/angular-archwizard` contains two ways to define a wizard step.
 One of these two ways is by using the `<aw-wizard-step>` component.
 
 #### \[stepId\]
@@ -169,7 +160,7 @@ To set the title of a step, add the `stepTitle` input attribute, with the choose
 
 #### \[navigationSymbol\]
 Sometimes it's useful to add a symbol in the center of the circle in the navigation bar, which belongs to the step.
-`angular-archwizard` supports this through the `[navigationSymbol]` input attribute of the wizard step.
+`@rgse/angular-archwizard` supports this through the `[navigationSymbol]` input attribute of the wizard step.
 
 Be aware, that not all layouts display the symbols.
 Only the layouts `large-filled-symbols` and `large-empty-symbols` display the symbols!
@@ -271,7 +262,7 @@ Possible `<aw-wizard-completion-step>` parameters:
 ## Directives
 
 ### \[awNavigationMode\]
-By default `angular-archwizard` operates in a "strict" navigation mode.
+By default `@rgse/angular-archwizard` operates in a "strict" navigation mode.
 It requires users to navigate through the wizard steps in a linear fashion, where they can only enter the next step if all previous steps have been completed and the exit condition of the current step have been fulfilled.
 The only exception to this rule are optional steps, which a user can skip.
 Using the navigation bar, the user can navigate back to steps they already visited.
@@ -327,11 +318,11 @@ my.component.html:
 </aw-wizard>
 ```
 
-Instead of implementing the `NavigationMode` interface from scratch, you can extend one of the classes provided by `angular-archwizard`:
+Instead of implementing the `NavigationMode` interface from scratch, you can extend one of the classes provided by `@rgse/angular-archwizard`:
 
 -   `BaseNavigationMode`: This class contains an abstract method called `isNavigable`, which you will have to override to define wizard's behavior towards navigation using the navigation bar.
 
--   `ConfigurableNavigationMode`: This class defines the default navigation mode used by `angular-archwizard`. 
+-   `ConfigurableNavigationMode`: This class defines the default navigation mode used by `@rgse/angular-archwizard`. 
     In some cases, it might be more convenient to base your custom implementation on it.
 
 This way of customizing the wizard is advanced, so be prepared to refer to documentation comments and source code for help.
@@ -470,7 +461,7 @@ When attaching the `awSelectedStep` directive to an arbitrary wizard step, it wi
 which is shown directly after the wizard startup.
 
 ### \[awGoToStep\]
-`angular-archwizard` has three directives, which allow moving between steps.
+`@rgse/angular-archwizard` has three directives, which allow moving between steps.
 These directives are the `awPreviousStep`, `asNextStep` and `awGoToStep` directives.
 
 The `awGoToStep` directive needs to receive an input, which tells the wizard, to which step it should navigate,
@@ -756,6 +747,6 @@ Please don't hesitate to look inside `node_modules/angular-archwizard/styles/var
 on the `$aw-colors` variable and other variables you can tweak to tune the wizard to your needs.
 
 ## Example
-You can find an basic example project using `angular-archwizard` [here](https://madoar.github.io/angular-archwizard-demo).
+You can find an basic example project using `@rgse/angular-archwizard` [here](https://madoar.github.io/angular-archwizard-demo).
 The sources for the example can be found in the [angular-archwizard-demo](https://github.com/madoar/angular-archwizard-demo) repository.
 It illustrates how the wizard looks like and how the different settings can change its layout and behavior.

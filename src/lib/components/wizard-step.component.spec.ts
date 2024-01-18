@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { ComponentFixture, fakeAsync, TestBed, tick, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ArchwizardModule } from '../archwizard.module';
 import { MovingDirection } from '../util/moving-direction.enum';
-import { WizardComponent } from './wizard.component';
 
 @Component({
   selector: 'aw-test-wizard',
@@ -23,8 +22,6 @@ import { WizardComponent } from './wizard.component';
   `
 })
 class WizardTestComponent {
-
-  @ViewChild(WizardComponent)
 
   public isValid: boolean = true;
 

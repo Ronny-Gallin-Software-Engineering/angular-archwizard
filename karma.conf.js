@@ -14,6 +14,7 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
+      require('@chiragrupani/karma-chromium-edge-launcher'),
     ],
     coverageReporter: {
       dir: require('path').join(__dirname, './coverage'),
@@ -43,7 +44,7 @@ module.exports = function (config) {
     },
     detectBrowsers: {
       // enable/disable, default is true
-      enabled: true,
+      enabled: false,
 
       // enable/disable phantomjs support, default is true
       usePhantomJS: false,
@@ -77,5 +78,6 @@ module.exports = function (config) {
       },
     },
     singleRun: true,
+    browsers: ['EdgeHeadless']
   });
 };

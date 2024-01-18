@@ -33,6 +33,7 @@ testem.log
 package-lock.json
 /typings
 /.angular
+/.nx
 
 # e2e
 /e2e/*.js

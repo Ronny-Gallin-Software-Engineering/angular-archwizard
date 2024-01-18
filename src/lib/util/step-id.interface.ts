@@ -1,4 +1,6 @@
 import {WizardStep} from './wizard-step.interface';
+import {StepIndex} from "./step-index.interface";
+import {StepOffset} from "./step-offset.interface";
 
 /**
  * An unique identifier of a wizard step
@@ -18,6 +20,6 @@ export interface StepId {
  * @param value The value to be checked
  * @returns True if the given value implements [[StepId]] and false otherwise
  */
-export function isStepId(value: { stepId: string }): value is StepId {
+export function isStepId(value: WizardStep | StepId | StepIndex | StepOffset): value is StepId {
   return Object.prototype.hasOwnProperty.call(value, 'stepId') && !(value instanceof WizardStep);
 }

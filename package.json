@@ -3,17 +3,28 @@
   "version": "17.0.0",
   "license": "MIT",
   "description": "A fork of the Angular Arch Wizard adapted for angular versions 17+.",
-  "homepage": "https://github.com/achimha/angular-archwizard",
+  "homepage": "https://github.com/Ronny-Gallin-Software-Engineering/angular-archwizard",
   "author": {
     "name": "Marc Arndt",
     "email": "marc.arndt@masimi.de"
   },
+  "contributors": [
+    {
+      "name": "Achim Hasenmueller",
+      "url": "https://github.com/achimha"
+    },
+    {
+      "name": "Ronny Gallin",
+      "email": "contact@rg-software.one",
+      "url": "https://rg-software.one"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/achimha/angular-archwizard"
+    "url": "https://github.com/Ronny-Gallin-Software-Engineering/angular-archwizard.git"
   },
   "bugs": {
-    "url": "https://github.com/achimha/angular-archwizard/issues"
+    "url": "https://github.com/Ronny-Gallin-Software-Engineering/angular-archwizard/issues"
   },
   "keywords": [
     "angular",
@@ -24,10 +35,13 @@
     "angular 10",
     "angular 11",
     "angular 14",
+    "angular17",
+    "angular 17",
     "ng9",
     "ng10",
     "ng11",
     "ng14",
+    "ng17",
     "ngx",
     "typescript",
     "wizard",
@@ -62,6 +76,7 @@
     "@angular/platform-browser": "^17.0.9",
     "@angular/platform-browser-dynamic": "^17.0.9",
     "@angular/router": "^17.0.9",
+    "@chiragrupani/karma-chromium-edge-launcher": "^2.3.1",
     "@earshinov/extract-scss-variables": "~0.1.1",
     "@types/estree": "^1.0.1",
     "@types/jasmine": "^5.1.4",
